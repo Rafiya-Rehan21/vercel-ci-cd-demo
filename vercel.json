@@ -1,6 +1,12 @@
 {
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+    ],
     "env": {
-      "NEXT_PUBLIC_CICD_DEMO": "DEMO1234"
+      "CICD_DEMO": "DEMO1234"
     }
   }
   
