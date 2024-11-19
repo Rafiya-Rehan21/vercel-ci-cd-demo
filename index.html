@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vercel CICD Demo</title>
+    <title>Vercel CI/CD Demo</title>
 </head>
 <body>
     <h1>Welcome to Vercel CI/CD Demo</h1>
-    <script src="config.js"></script>
+    <script>
+        // Ensure the correct injection of environment variable
+        const secretKey = "{{CICD_DEMO}}"; // This should be replaced by Vercel at build time
+        console.log("Your Secret Key is:", secretKey);
+        console.log("hello g");  // This should be printed in the console as well
+    </script>
 </body>
 </html>
